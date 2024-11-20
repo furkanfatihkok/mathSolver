@@ -11,10 +11,10 @@
 		027BA4D62CEDFBA500DABD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BA4D52CEDFBA500DABD30 /* SceneDelegate.swift */; };
 		027BA4DD2CEDFBA600DABD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */; };
 		027BA4E02CEDFBA600DABD30 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DF2CEDFBA600DABD30 /* Base */; };
-		02D5B9822CEE00BE00FECD96 /* NeonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02D5B9812CEE00BE00FECD96 /* NeonSDK */; };
 		02D5B9842CEE025900FECD96 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9832CEE025900FECD96 /* OnboardingVC.swift */; };
 		02D5B9862CEE026200FECD96 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9852CEE026200FECD96 /* HomeVC.swift */; };
 		02D5B9882CEE026D00FECD96 /* PaywallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9872CEE026D00FECD96 /* PaywallVC.swift */; };
+		02D5B9962CEE09C000FECD96 /* NeonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02D5B9952CEE09C000FECD96 /* NeonSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D5B9822CEE00BE00FECD96 /* NeonSDK in Frameworks */,
+				02D5B9962CEE09C000FECD96 /* NeonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,16 +60,56 @@
 		027BA4D22CEDFBA500DABD30 /* mathSolver */ = {
 			isa = PBXGroup;
 			children = (
+				02D5B98E2CEE054300FECD96 /* Application */,
+				02D5B98F2CEE054800FECD96 /* Resources */,
+				02D5B9902CEE06E400FECD96 /* Model */,
+				02D5B9912CEE06EB00FECD96 /* ViewModel */,
+				02D5B9922CEE06EE00FECD96 /* View */,
+			);
+			path = mathSolver;
+			sourceTree = "<group>";
+		};
+		02D5B98E2CEE054300FECD96 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				027BA4D32CEDFBA500DABD30 /* AppDelegate.swift */,
-				02D5B9832CEE025900FECD96 /* OnboardingVC.swift */,
-				02D5B9852CEE026200FECD96 /* HomeVC.swift */,
-				02D5B9872CEE026D00FECD96 /* PaywallVC.swift */,
 				027BA4D52CEDFBA500DABD30 /* SceneDelegate.swift */,
-				027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */,
 				027BA4DE2CEDFBA600DABD30 /* LaunchScreen.storyboard */,
 				027BA4E12CEDFBA600DABD30 /* Info.plist */,
 			);
-			path = mathSolver;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		02D5B98F2CEE054800FECD96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02D5B9902CEE06E400FECD96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02D5B9912CEE06EB00FECD96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02D5B9922CEE06EE00FECD96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02D5B9832CEE025900FECD96 /* OnboardingVC.swift */,
+				02D5B9872CEE026D00FECD96 /* PaywallVC.swift */,
+				02D5B9852CEE026200FECD96 /* HomeVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +129,7 @@
 			);
 			name = mathSolver;
 			packageProductDependencies = (
-				02D5B9812CEE00BE00FECD96 /* NeonSDK */,
+				02D5B9952CEE09C000FECD96 /* NeonSDK */,
 			);
 			productName = mathSolver;
 			productReference = 027BA4D02CEDFBA500DABD30 /* mathSolver.app */;
@@ -298,11 +338,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XS5B289466;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = mathSolver/Info.plist;
+				INFOPLIST_FILE = mathSolver/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,11 +366,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XS5B289466;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = mathSolver/Info.plist;
+				INFOPLIST_FILE = mathSolver/Application/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +420,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		02D5B9812CEE00BE00FECD96 /* NeonSDK */ = {
+		02D5B9952CEE09C000FECD96 /* NeonSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02D5B9802CEE00BE00FECD96 /* XCRemoteSwiftPackageReference "neon-sdk" */;
 			productName = NeonSDK;
