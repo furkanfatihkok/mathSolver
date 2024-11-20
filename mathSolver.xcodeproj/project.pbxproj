@@ -12,6 +12,7 @@
 		027BA4D82CEDFBA500DABD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BA4D72CEDFBA500DABD30 /* ViewController.swift */; };
 		027BA4DD2CEDFBA600DABD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */; };
 		027BA4E02CEDFBA600DABD30 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DF2CEDFBA600DABD30 /* Base */; };
+		02D5B9822CEE00BE00FECD96 /* NeonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02D5B9812CEE00BE00FECD96 /* NeonSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D5B9822CEE00BE00FECD96 /* NeonSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = mathSolver;
+			packageProductDependencies = (
+				02D5B9812CEE00BE00FECD96 /* NeonSDK */,
+			);
 			productName = mathSolver;
 			productReference = 027BA4D02CEDFBA500DABD30 /* mathSolver.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 027BA4C72CEDFBA500DABD30;
+			packageReferences = (
+				02D5B9802CEE00BE00FECD96 /* XCRemoteSwiftPackageReference "neon-sdk" */,
+			);
 			productRefGroup = 027BA4D12CEDFBA500DABD30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02D5B9802CEE00BE00FECD96 /* XCRemoteSwiftPackageReference "neon-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neon-apps/neon-sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02D5B9812CEE00BE00FECD96 /* NeonSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02D5B9802CEE00BE00FECD96 /* XCRemoteSwiftPackageReference "neon-sdk" */;
+			productName = NeonSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 027BA4C82CEDFBA500DABD30 /* Project object */;
 }
