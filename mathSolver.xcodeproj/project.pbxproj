@@ -9,20 +9,24 @@
 /* Begin PBXBuildFile section */
 		027BA4D42CEDFBA500DABD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BA4D32CEDFBA500DABD30 /* AppDelegate.swift */; };
 		027BA4D62CEDFBA500DABD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BA4D52CEDFBA500DABD30 /* SceneDelegate.swift */; };
-		027BA4D82CEDFBA500DABD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027BA4D72CEDFBA500DABD30 /* ViewController.swift */; };
 		027BA4DD2CEDFBA600DABD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */; };
 		027BA4E02CEDFBA600DABD30 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 027BA4DF2CEDFBA600DABD30 /* Base */; };
 		02D5B9822CEE00BE00FECD96 /* NeonSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02D5B9812CEE00BE00FECD96 /* NeonSDK */; };
+		02D5B9842CEE025900FECD96 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9832CEE025900FECD96 /* OnboardingVC.swift */; };
+		02D5B9862CEE026200FECD96 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9852CEE026200FECD96 /* HomeVC.swift */; };
+		02D5B9882CEE026D00FECD96 /* PaywallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5B9872CEE026D00FECD96 /* PaywallVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		027BA4D02CEDFBA500DABD30 /* mathSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mathSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027BA4D32CEDFBA500DABD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027BA4D52CEDFBA500DABD30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		027BA4D72CEDFBA500DABD30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027BA4DF2CEDFBA600DABD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		027BA4E12CEDFBA600DABD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D5B9832CEE025900FECD96 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		02D5B9852CEE026200FECD96 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		02D5B9872CEE026D00FECD96 /* PaywallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				027BA4D32CEDFBA500DABD30 /* AppDelegate.swift */,
+				02D5B9832CEE025900FECD96 /* OnboardingVC.swift */,
+				02D5B9852CEE026200FECD96 /* HomeVC.swift */,
+				02D5B9872CEE026D00FECD96 /* PaywallVC.swift */,
 				027BA4D52CEDFBA500DABD30 /* SceneDelegate.swift */,
-				027BA4D72CEDFBA500DABD30 /* ViewController.swift */,
 				027BA4DC2CEDFBA600DABD30 /* Assets.xcassets */,
 				027BA4DE2CEDFBA600DABD30 /* LaunchScreen.storyboard */,
 				027BA4E12CEDFBA600DABD30 /* Info.plist */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027BA4D82CEDFBA500DABD30 /* ViewController.swift in Sources */,
+				02D5B9882CEE026D00FECD96 /* PaywallVC.swift in Sources */,
+				02D5B9862CEE026200FECD96 /* HomeVC.swift in Sources */,
+				02D5B9842CEE025900FECD96 /* OnboardingVC.swift in Sources */,
 				027BA4D42CEDFBA500DABD30 /* AppDelegate.swift in Sources */,
 				027BA4D62CEDFBA500DABD30 /* SceneDelegate.swift in Sources */,
 			);
